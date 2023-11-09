@@ -17,10 +17,11 @@ public class Diferenca_produtos {
 		System.out.println("Por fim, digite o quarto número. Ele que será multiplicado pelo terceiro: ");
 		n4 = leia.nextFloat();
 		
-		diferenca = (n1 * n2) - (n3 * n4);
+		diferenca = ((n1 * n2) - (n3 * n4));
 		
 		System.out.println("A diferença entre os produtos é igual a: " + diferenca);
 
+		leia.close(); // Fechando Scanner
 	}
 
 }

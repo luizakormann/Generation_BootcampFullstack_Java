@@ -19,6 +19,8 @@ public class Salario_mensal {
 		salario_liq = salario_bruto + adicional_noturno + (horas_extras * 5) - descontos;
 		
 		System.out.println("O salário líquido da pessoa colaboradora este mês é: R$" + salario_liq);
+		
+		leia.close(); // Fechando Scanner
 	}
 
 }

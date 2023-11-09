@@ -15,11 +15,11 @@ public class Calculadora_salario {
 		System.out.println("Agora digite o valor do abono referente:");
 		abono_salarial = leia.nextFloat();
 		
-		novo_salario = salario_base + abono_salarial;
+		novo_salario = (salario_base + abono_salarial);
 				
 		System.out.println("O novo salario do funcionário será: R$" + novo_salario);
 		
-		
+		leia.close(); // Fechando Scanner
 	}
 
 }

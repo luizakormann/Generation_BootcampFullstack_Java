@@ -16,9 +16,10 @@ public class Media_final {
 		System.out.println("Por fim, o último bimestre: ");
 		nota4 = leia.nextFloat();
 		
-		mediaFinal = (nota1+nota2+nota3+nota4)/4;
+		mediaFinal = ((nota1+nota2+nota3+nota4)/4);
 		System.out.println("Sua média final é: " + mediaFinal);
 
+		leia.close(); // Fechando Scanner
 	}
 
 }
