@@ -19,7 +19,7 @@ public class Diferenca_produtos {
 		
 		diferenca = (n1 * n2) - (n3 * n4);
 		
-		System.out.println("A diferença entre os produtos é" + diferenca);
+		System.out.println("A diferença entre os produtos é igual a: " + diferenca);
 
 	}
 
