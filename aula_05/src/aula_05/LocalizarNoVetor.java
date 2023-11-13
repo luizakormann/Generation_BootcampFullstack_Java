@@ -19,11 +19,12 @@ public class LocalizarNoVetor {
 			if (vetor[i] == num) {
 				posicao = i;
 				System.out.println("O número " + num + " está localizado na posição: " + posicao);
-			} 
 			}
-		
-		if(posicao <= -1)
-		System.out.println("O número " + num + " não foi encontrado. Por favor, reinicialize e digite um número válido.");
 		}
 
+		if (posicao <= -1)
+			System.out.println(
+					"O número " + num + " não foi encontrado. Por favor, reinicialize e digite um número válido.");
 	}
+
+}
