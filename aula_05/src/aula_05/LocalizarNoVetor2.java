@@ -12,15 +12,15 @@ public class LocalizarNoVetor2 {
 		float media = 0.00f;
 		String i_impares = "", i_pares = " ";
 
-		System.out.println(
-				"Vamos criar um vetor?\nPediremos para você digitar 10 números e depois apresentaremos algumas características do seu vetor.");
+		System.out.println("Boas vindas! Vamos criar um vetor?");
+		System.out.println("Após inserir os 10 números que comporão o vetor, apresentaremos algumas características o compõem."); 
 		// leia 10 números inteiros e armazene em um vetor.
 
 		for (int i = 0; i < v_vazio.length; i++) {
 			System.out.println("Digite um número: ");
 			v_vazio[i] = leia.nextInt();
 			soma += v_vazio[i];
-			media = ((float)soma) / v_vazio.length;
+			media = ((float) soma) / v_vazio.length;
 			if (i % 2 != 0) {
 				i_impares += (v_vazio[i]) + ", ";
 			}
@@ -35,7 +35,7 @@ public class LocalizarNoVetor2 {
 		System.out.println("Elementos pares: " + i_pares);
 		// A Soma de todos os elementos do vetor
 		System.out.println("Soma: " + soma);
-		// A Média de todos os elementos do vetor, armazenada em uma variável do tipo real
+		// A Média de todos os elementos do vetor, armazenada em uma variável real
 		System.out.printf("Media: %.2f", media);
 	}
 
