@@ -17,7 +17,7 @@ public class LocalizarNoVetor2 {
 		// leia 10 números inteiros e armazene em um vetor.
 
 		for (int i = 0; i < v_vazio.length; i++) {
-			System.out.println("Digite um número: ");
+			System.out.println("\nDigite um número: ");
 			v_vazio[i] = leia.nextInt();
 			soma += v_vazio[i];
 			media = ((float) soma) / v_vazio.length;
