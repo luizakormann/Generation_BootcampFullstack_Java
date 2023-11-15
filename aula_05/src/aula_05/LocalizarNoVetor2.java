@@ -13,7 +13,8 @@ public class LocalizarNoVetor2 {
 		String i_impares = "", i_pares = " ";
 
 		System.out.println("Boas vindas! Vamos criar um vetor?");
-		System.out.println("Após inserir os 10 números que comporão o vetor, apresentaremos algumas características o compõem."); 
+		System.out.println(
+				"Após inserir os 10 números que comporão o vetor, apresentaremos algumas características o compõem.");
 		// leia 10 números inteiros e armazene em um vetor.
 
 		for (int i = 0; i < v_vazio.length; i++) {
