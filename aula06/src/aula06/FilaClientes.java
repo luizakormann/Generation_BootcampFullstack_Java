@@ -10,61 +10,45 @@ public class FilaClientes {
 
 	public static void main(String[] args) {
 
-		Queue<String> fila = new LinkedList<String>();
-		String nome;
-		int op = 9;
+		int op;
+		// Caso a fila esteja vazia, o programa deverá informar que a fila está vazia ao
+		// tentar retirar (chamar) um cliente da fila..
 
-		do {
-			System.out.println("\n*********************************************\n");
-			System.out.println("	1 - Adicionar Cliente na Fila");
-			System.out.println("	2 - Listar todos os Clientes");
-			System.out.println("	3 - Retirar Cliente da Fila");
-			System.out.println("	0 - Sair\n");
-			System.out.println("*********************************************");
-			System.out.print("Entre com a opção desejada: ");
-			op = leia.nextInt();
+		System.out.println("*************************Opções do programa***************************\n");
+		System.out.println("1 - Adicionar Cliente na Fila");
+		System.out.println("2 - Listar todos os Clientes");
+		System.out.println("3 - Chamar próximo Cliente");
+		System.out.println("0 - Sair\n");
+		System.out.println("**********************************************************************\n");
+
+		Queue<String> filaClientes = new LinkedList<String>(); // primeira fila criada!!
+
+		System.out.println("Por favor, entre com a opção desejada:");
+		op = leia.nextInt();
+
+		while (op != 0) {
 			switch (op) {
+			case 0:
+				System.out.println("Programa finalizado!");
+				break;
 			case 1:
-				System.out.print("Digite o nome: ");
+				System.out.println("Digite o nome do cliente:");
 				leia.skip("\\R");
-				nome = leia.nextLine();
-				fila.add(nome);
-				System.out.println("\nFila: ");
-				for (var s : fila) {
-					System.out.println(s);
-				}
-				System.out.println("\nCliente Adicionado!");
+				filaClientes.add(leia.nextLine());
 				break;
 			case 2:
-				if (!fila.isEmpty()) {
-					System.out.println("\nLista de Clientes na Fila: ");
-					for (var s : fila) {
-						System.out.println(s);
-					}
-					break;
-				}
-				System.out.println("A Fila está vazia!");
+				System.out.println("Os clientes na fila atualmente são:");
+				System.out.println(filaClientes);
 				break;
 			case 3:
-				if (!fila.isEmpty()) {
-					fila.remove();
-					System.out.println("\nFila: ");
-					for (var s : fila) {
-						System.out.println(s);
-					}
-					System.out.println("\nO cliente foi Chamado!");
-					break;
-				}
-				System.out.println("\nA Fila está vazia!");
-				break;
-			case 0:
-				System.out.println("\nPrograma Finalizado!");
+				System.out.println("Chegou a sua vez, ");
+				filaClientes.poll();
 				break;
 			default:
-				System.out.println("\nOpção Inválida");
+				System.out.println(
+						"Opção inválida! Por favor, reinicialize e digite uma opção válida de acordo com o menu de opções.");
 				break;
 			}
-
-		} while (op != 0);
+		}
 	}
 }
