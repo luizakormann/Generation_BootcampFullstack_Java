@@ -79,8 +79,8 @@ public class Produto {
 		String tipo_ac = "";
 		switch (this.acessorios) {
 		case 1 -> tipo_ac = "fones";
-		case 2 -> tipo_ac = "console";
-		case 3 -> tipo_ac = "óculos";
+		case 2 -> tipo_ac = "óculos";
+		case 3 -> tipo_ac = "n/a";
 		}
 		
 		System.out.println("Boas vindas à Loja de Games! Aqui estão as informações do produto: ");
@@ -88,7 +88,7 @@ public class Produto {
 		System.out.println("Categoria: " + categoria_nome);
 		System.out.println("Indicação faixa etária: " + faixa_etaria);
 		System.out.println("Fabricante: " + fabricante_jogo);
-		System.out.println("Acessórios: " + tipo_ac + "\n");
+		System.out.println("Acessórios recomendados: " + tipo_ac + "\n");
 	}
 	
 }
