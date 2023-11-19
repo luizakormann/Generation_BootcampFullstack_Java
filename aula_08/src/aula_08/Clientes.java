@@ -77,6 +77,6 @@ public class Clientes {
 		System.out.println("Nome completo: " + this.nome + " " + this.sobrenome);
 		System.out.println("ID cliente: " + this.id);
 		System.out.println("Item favorito (mais comprado): " + item);
-		System.out.println("Última compra: " + compra);
+		System.out.println("Última compra: " + compra + "\n");
 	}
 }
