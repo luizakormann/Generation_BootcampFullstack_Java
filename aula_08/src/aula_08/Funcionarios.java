@@ -75,7 +75,7 @@ public class Funcionarios {
 		System.out.println("Nome completo: " + this.nome + " " + this.sobrenome);
 		System.out.println("Unidade: " + cidade);
 		System.out.println("Cargo: " + cod_cargo);
-		System.out.println("Salário: " + this.salario);
+		System.out.println("Salário: R$" + this.salario + "\n");
 	}
 
 }
