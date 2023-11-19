@@ -76,6 +76,6 @@ public class Farmacia {
 		System.out.println("Categoria: " + nome_categoria);
 		System.out.println("Quantidade em estoque: " + this.estoque);
 		System.out.println("Tipo de receita: " + lib_receita);
-		System.out.println("Valor unitário: " + this.preco);
+		System.out.println("Valor unitário: R$" + this.preco + "\n");
 	}
 }
