@@ -10,7 +10,7 @@ public class FilaClientes {
 
 	public static void main(String[] args) {
 
-		int op;
+		int op = 1;
 		// Caso a fila esteja vazia, o programa deverá informar que a fila está vazia ao
 		// tentar retirar (chamar) um cliente da fila..
 
@@ -23,10 +23,10 @@ public class FilaClientes {
 
 		Queue<String> filaClientes = new LinkedList<String>(); // primeira fila criada!!
 
-		System.out.println("Por favor, entre com a opção desejada:");
-		op = leia.nextInt();
 
 		while (op != 0) {
+			System.out.println("Por favor, entre com a opção desejada:");
+			op = leia.nextInt();
 			switch (op) {
 			case 0:
 				System.out.println("Programa finalizado!");
@@ -35,14 +35,15 @@ public class FilaClientes {
 				System.out.println("Digite o nome do cliente:");
 				leia.skip("\\R");
 				filaClientes.add(leia.nextLine());
+				System.out.println("Cliente adicionado!");
 				break;
 			case 2:
 				System.out.println("Os clientes na fila atualmente são:");
 				System.out.println(filaClientes);
 				break;
 			case 3:
-				System.out.println("Chegou a sua vez, ");
 				filaClientes.poll();
+				System.out.println("O cliente foi chamado!");
 				break;
 			default:
 				System.out.println(
