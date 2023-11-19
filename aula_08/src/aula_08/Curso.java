@@ -66,14 +66,14 @@ public class Curso {
 		}
 		String areaconhec = "";
 		switch (this.area) {
-		case 1 -> areaconhec = "habilidades comportamentais";
-		case 2 -> areaconhec = "habilidades técnicas";
+		case 1 -> areaconhec = "Habilidades Comportamentais";
+		case 2 -> areaconhec = "Habilidades Técnicas";
 		}
 		String formatoc = "";
 		switch (this.formato) {
-		case 1 -> formatoc = "online";
-		case 2 -> formatoc = "presencial";
-		case 3 -> formatoc = "híbrido";
+		case 1 -> formatoc = "Online";
+		case 2 -> formatoc = "Presencial";
+		case 3 -> formatoc = "Híbrido";
 		}
 
 		System.out.println("Boas vindas! Confira abaixo as informações do curso escolhido: ");
@@ -81,6 +81,6 @@ public class Curso {
 		System.out.println("Duração total: " + durcurso);
 		System.out.println("Área conhecimento: " + areaconhec);
 		System.out.println("Formato do curso: " + formatoc);
-		System.out.println("Valor do investimento: " + this.preco);
+		System.out.println("Valor do investimento: " + this.preco + "\n");
 	}
 }
