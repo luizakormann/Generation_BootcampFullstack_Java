@@ -3,14 +3,14 @@ package aula_08;
 public class Clientes {
 
 	private String nome;
-	private String sobrenome;
+	private String endereco;
 	private int id;
 	private int item_favorito;
 	private int ultima_compra;
 
-	public Clientes(String nome, String sobrenome, int id, int item_favorito, int ultima_compra) {
+	public Clientes(String nome, String endereco, int id, int item_favorito, int ultima_compra) {
 		this.nome = nome;
-		this.sobrenome = sobrenome;
+		this.endereco = endereco;
 		this.id = id;
 		this.item_favorito = item_favorito;
 		this.ultima_compra = ultima_compra;
@@ -24,12 +24,12 @@ public class Clientes {
 		this.nome = nome;
 	}
 
-	public String getSobrenome() {
-		return sobrenome;
+	public String getEndereco() {
+		return endereco;
 	}
 
-	public void setSobrenome(String sobrenome) {
-		this.sobrenome = sobrenome;
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
 	}
 
 	public int getId() {
@@ -74,9 +74,10 @@ public class Clientes {
 		}
 		
 		System.out.println("Boas vindas! Aqui estão as informações do seu cliente:");
-		System.out.println("Nome completo: " + this.nome + " " + this.sobrenome);
+		System.out.println("Nome completo: " + this.nome);
+		System.out.println("Endereço: " + this.endereco);
 		System.out.println("ID cliente: " + this.id);
 		System.out.println("Item favorito (mais comprado): " + item);
-		System.out.println("Última compra: " + compra + "\n");
+		System.out.println("Última compra: " + compra);
 	}
 }
