@@ -59,9 +59,9 @@ public class Funcionarios {
 
 		String cod_cargo = "";
 		switch (this.cargo) {
-		case 1 -> cod_cargo = "gerente";
-		case 2 -> cod_cargo = "supervisor";
-		case 3 -> cod_cargo = "vendedor";
+		case 1 -> cod_cargo = "Gerente";
+		case 2 -> cod_cargo = "Supervisor";
+		case 3 -> cod_cargo = "Vendedor";
 		}
 
 		String cidade = "";
@@ -75,7 +75,7 @@ public class Funcionarios {
 		System.out.println("Nome completo: " + this.nome + " " + this.sobrenome);
 		System.out.println("Unidade: " + cidade);
 		System.out.println("Cargo: " + cod_cargo);
-		System.out.println("Salário: R$" + this.salario + "\n");
+		System.out.println("Salário: R$" + this.salario);
 	}
 
 }
