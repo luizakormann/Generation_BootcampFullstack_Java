@@ -10,18 +10,23 @@ public class ChecaIdade {
 
 		int idade;
 		
+		try {
 		System.out.println("\nDigite uma idade: ");
 		idade = leia.nextInt();
 		
 		validarIdade(idade);
-		
+		}catch(ArithmeticException e) {
+			System.out.println("A pessoa ainda não pode aprender a dirigir.");
+		}
 	}
 
 	public static void validarIdade(int idade){
 		
 		if(idade > 18)
-			System.out.println("A Pessoa pode dirigir!!");
-	
+			System.out.println("A pessoa pode se inscrever no CFC!!");
+		else
+			throw new ArithmeticException();
+		
 	}
 
 }
